@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('avatar')->nullable();
             $table->string('mobile')->nullable();
-            $table->integer('class_id');
+            $table->integer('class_id')->nullable();
             $table->enum('role', ['Admin', 'Teacher', 'Student'])->default('Student');
             $table->enum('status', ['Active', 'Blocked'])->default('Active');
             $table->string('address')->nullable();
