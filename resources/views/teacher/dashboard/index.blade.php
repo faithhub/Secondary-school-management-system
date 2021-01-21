@@ -58,11 +58,11 @@
 										<li>
 											@if ($user->avatar != null)
 												<span class="new-users-pic">
-													<img src="uploads/student_pics/{{$user->avatar}}" alt="{{$user->surname}} {{$user->last_name}}"/>
+													<img src="{{ asset('uploads/student_avatar/'.$user->avatar) }}" alt="{{$user->surname}} {{$user->last_name}}"/>
 												</span>												
 											@else
 												<span class="new-users-pic">
-													<img src="uploads/avatar_pics.jpg" alt=""/>
+													<img src="{{ asset('uploads/avatar_pics.jpg') }}" alt=""/>
 												</span>												
 											@endif
 											<span class="new-users-text">

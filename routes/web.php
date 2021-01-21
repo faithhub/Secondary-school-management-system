@@ -39,6 +39,7 @@ Route::group(['prefix' => 'student', 'middleware' => ['auth', 'student']], funct
 
   //Subject
   Route::get('subjects', [\App\Http\Controllers\Student\SubjectController::class, 'index']);
+  Route::get('download-result', [\App\Http\Controllers\Student\SubjectController::class, 'download_pdf']);
 });
 
 // Teachers
@@ -51,6 +52,7 @@ Route::group(['prefix' => 'teacher', 'middleware' => ['auth', 'teacher']], funct
   Route::post('edit-class', [\App\Http\Controllers\Teacher\ClassController::class, 'edit'])->name('edit-result');
   Route::get('export-data/{id}', [\App\Http\Controllers\Teacher\ClassController::class, 'exportdata']);
   Route::get('export-data-pdf/{id}', [\App\Http\Controllers\Teacher\ClassController::class, 'exportdatapdf']);
+  Route::get('download-result-pdf/{id}', [\App\Http\Controllers\Teacher\ClassController::class, 'download_pdf']);
   Route::post('import-data/', [\App\Http\Controllers\Teacher\ClassController::class, 'importresult'])->name('student-upload-result');
 
   //Student
