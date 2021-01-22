@@ -1,5 +1,5 @@
-@extends('teacher.layouts.app')
-@section('teacher')
+@extends('student.layouts.app')
+@section('student')
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 	<!--Main container start -->
@@ -48,7 +48,7 @@
                                     </tbody>
                                 </table>
                                 <div class="text-right mt-2">
-                                    <a href="{{ url('teacher/export-data-pdf', $class->class_id) }}" class="btn btn-small btn-success mr-2">Download Result</a>
+                                    <a href="{{ url('student/download-result') }}" class="btn btn-small btn-success mr-2">Download Result</a>
                                     {{-- <button class="btn green" data-bs-toggle="modal" data-bs-target="#uploadStudentResultInBulk">Upload Result in Bulk</button> --}}
                                 </div>                                    
 							</div>

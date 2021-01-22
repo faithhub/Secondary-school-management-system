@@ -10,6 +10,7 @@ use App\Models\Result;
 use App\Models\Subject;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
@@ -169,5 +170,21 @@ class ClassController extends Controller
                 return \back();
             }
         }
+    }
+
+    public function download_pdf($id)
+    {
+         $students = DB::table('users')
+         ->join('results', 'results.student_id', '=', 'users.email')
+         ->where('users.class_id', $id)
+         ->where('results.subject_id', Auth::user()->class_id)
+         ->select('results.*', 'users.*')
+         ->get();
+         $sn = 1;
+        $subject = Subject::where('id', Auth::user()->class_id)->first();
+        $pdf = App::make('dompdf.wrapper');
+        $pdf->setOptions(['dpi' => 150, 'defaultFont' => 'sans-serif']);
+        $pdf->loadView('result2', compact(['students', 'sn', 'subject']));
+        return $pdf->download(Auth::user()->surname.' '.Auth::user()->last_name.' '.$subject->name.' result.pdf');
     }
 }

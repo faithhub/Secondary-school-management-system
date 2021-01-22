@@ -86,7 +86,7 @@
                                     </tbody>
                                 </table>
                                 <div class="text-right mt-2">
-                                    {{-- <a href="{{ url('teacher/export-data-pdf', $class->class_id) }}" class="btn btn-small btn-success mr-2">Download Result PDF</a> --}}
+                                    <a href="{{ url('teacher/download-result-pdf', $class->class_id) }}" class="btn btn-small btn-success mr-2">Download Result PDF</a>
                                     <button class="btn green" data-bs-toggle="modal" data-bs-target="#uploadStudentResultInBulk">Upload Result in Bulk</button>
                                 </div>
                                     
