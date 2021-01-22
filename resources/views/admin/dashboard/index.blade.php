@@ -116,18 +116,18 @@
 								</div>
 								<div class="card-courses-full-dec">
 									<div class="card-courses-title">
-										<h2 class="m-b5">{{Auth::user()->surname}} {{Auth::user()->last_name}}</h2>
+										<h4 class="m-b5">{{Auth::user()->surname}} {{Auth::user()->last_name}}</h4>
 									</div>
 									<div class="card-courses-list-bx">
 										<ul class="card-courses-view">
 											<li class="card-courses-categories">
-												<h4>Role</h4>
-												<h3>{{Auth::user()->role}}</h3>
+												<h6>Role</h6>
+												<h5>{{Auth::user()->role}}</h5>
 											</li>
-											<li class="card-courses-categories">
-												<h4>Teacher ID</h4>
-												<h3>{{Auth::user()->email}}</h3>
-											</li>
+											<!-- <li class="card-courses-categories">
+												<h6>Teacher ID</h6>
+												<h5>{{Auth::user()->email}}</h5>
+											</li> -->
 										</ul>
 									</div>
 									<div class="row card-courses-dec">

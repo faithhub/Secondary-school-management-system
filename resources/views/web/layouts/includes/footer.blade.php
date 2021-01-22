@@ -1,4 +1,4 @@
-
+<!-- 
         <footer>
             <div class="footer-top">
                 <div class="pt-exebar">
@@ -102,4 +102,4 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->

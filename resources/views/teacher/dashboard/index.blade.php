@@ -96,17 +96,17 @@
 								</div>
 								<div class="card-courses-full-dec">
 									<div class="card-courses-title">
-										<h2 class="m-b5">{{Auth::user()->surname}} {{Auth::user()->last_name}}</h2>
+										<h4 class="m-b5">{{Auth::user()->surname}} {{Auth::user()->last_name}}</h4>
 									</div>
 									<div class="card-courses-list-bx">
 										<ul class="card-courses-view">
 											<li class="card-courses-categories">
-												<h4>Suject</h4>
-												<h3>{{$subject->name}}</h3>
+												<h5>Subject</h5>
+												<h4>{{$subject->name}}</h4>
 											</li>
 											<li class="card-courses-categories">
-												<h4>Teacher ID</h4>
-												<h3>{{Auth::user()->email}}</h3>
+												<h5>Teacher ID</h5>
+												<h4>{{Auth::user()->email}}</h4>
 											</li>
 										</ul>
 									</div>

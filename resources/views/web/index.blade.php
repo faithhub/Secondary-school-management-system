@@ -77,7 +77,7 @@
                             data-paddingbottom="[10,10,10,10]"
                             data-paddingleft="[0,0,0,0]"
                             style="z-index: 6; font-family:rubik; font-weight:700; text-align:center; white-space: normal;">
-                                Welcome To University
+                                Welcome To EduChamp
                         </div>
 
                         <!-- LAYER NR. 3 -->
@@ -121,13 +121,13 @@
                             data-paddingbottom="[0,0,0,0]"
                             data-paddingleft="[0,0,0,0]"
                             style="z-index: 7; text-transform:capitalize; white-space: unset; color:#fff; font-family:rubik; font-size:18px; line-height:28px; font-weight:400;">
-                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                 A student management system
                         </div>
                         <!-- LAYER NR. 4 -->
-                        <div class="tp-caption Newspaper-Button rev-btn " 
+                        <a href="{{ url('login') }}"><div class="tp-caption Newspaper-Button rev-btn " 
                             id="slide-100-layer-5" 
                             data-x="['center','center','center','center']" 
-                            data-hoffset="['90','80','75','90']" 
+                            data-hoffset="['0','0','0','0']" 
                             data-y="['top','top','top','top']" 
                             data-voffset="['400','400','400','420']" 
                             data-width="none"
@@ -142,8 +142,8 @@
                             data-paddingright="[30,35,35,15]"
                             data-paddingbottom="[12,12,12,12]"
                             data-paddingleft="[30,35,35,15]"
-                            style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; background-color:var(--primary) !important; border:0; border-radius:30px; margin-right:5px;">READ MORE </div>
-                        <div class="tp-caption Newspaper-Button rev-btn" 
+                            style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; background-color:var(--primary) !important; border:0; border-radius:30px; margin-right:5px;">Log In</div></a>
+                        <!-- <div class="tp-caption Newspaper-Button rev-btn" 
                             id="slide-100-layer-6" 
                             data-x="['center','center','center','center']" 
                             data-hoffset="['-90','-80','-75','-90']" 
@@ -161,7 +161,7 @@
                             data-paddingright="[30,35,35,15]"
                             data-paddingbottom="[12,12,12,12]"
                             data-paddingleft="[30,35,35,15]"
-                            style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; border-radius:30px;">CONTACT US</div>
+                            style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; border-radius:30px;">CONTACT US</div> -->
                     </li>
                     <li data-index="rs-200" 
                     data-transition="parallaxvertical" 
@@ -235,7 +235,7 @@
                             data-paddingbottom="[10,10,10,10]"
                             data-paddingleft="[0,0,0,0]"
                             style="z-index: 6; font-family:rubik; font-weight:700; text-align:center; white-space: normal;text-transform:uppercase;">
-                                Welcome To University
+                                Welcome To EduChamp
                         </div>
 
                         <!-- LAYER NR. 3 -->
@@ -279,13 +279,13 @@
                             data-paddingbottom="[0,0,0,0]"
                             data-paddingleft="[0,0,0,0]"
                             style="z-index: 7; text-transform:capitalize; white-space: unset; color:#fff; font-family:rubik; font-size:18px; line-height:28px; font-weight:400;">
-                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                 A student managent system
                         </div>
                         <!-- LAYER NR. 4 -->
-                        <div class="tp-caption Newspaper-Button rev-btn " 
+                        <a href="{{ url('login') }}"><div class="tp-caption Newspaper-Button rev-btn " 
                             id="slide-200-layer-5" 
                             data-x="['center','center','center','center']" 
-                            data-hoffset="['90','80','75','90']" 
+                            data-hoffset="['0','0','0','0']" 
                             data-y="['top','top','top','top']" 
                             data-voffset="['400','400','400','420']" 
                             data-width="none"
@@ -300,8 +300,8 @@
                             data-paddingright="[30,35,35,15]"
                             data-paddingbottom="[12,12,12,12]"
                             data-paddingleft="[30,35,35,15]"
-                            style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; background-color:var(--primary) !important; border:0; border-radius:30px; margin-right:5px;">READ MORE </div>
-                        <div class="tp-caption Newspaper-Button rev-btn" 
+                            style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; background-color:var(--primary) !important; border:0; border-radius:30px; margin-right:5px;">Log in</div></a>
+                        <!-- <div class="tp-caption Newspaper-Button rev-btn" 
                             id="slide-200-layer-6" 
                             data-x="['center','center','center','center']" 
                             data-hoffset="['-90','-80','-75','-90']" 
@@ -319,7 +319,7 @@
                             data-paddingright="[30,35,35,15]"
                             data-paddingbottom="[12,12,12,12]"
                             data-paddingleft="[30,35,35,15]"
-                            style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; border-radius:30px;">CONTACT US</div>
+                            style="z-index: 8; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; border-radius:30px;">CONTACT US</div> -->
                     </li>
                     <!-- SLIDE  -->
                 </ul>
@@ -330,7 +330,7 @@
     <div class="content-block">
         
         <!-- Our Services -->
-        <div class="section-area content-inner service-info-bx">
+        <!-- <div class="section-area content-inner service-info-bx">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-6">
@@ -377,11 +377,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Our Services END -->
         
         <!-- Popular Courses -->
-        <div class="section-area section-sp2 popular-courses-bx">
+        <!-- <div class="section-area section-sp2 popular-courses-bx">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 heading-bx left">
@@ -506,11 +506,11 @@
                 </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Popular Courses END -->
         
         <!-- Form -->
-        <div class="section-area section-sp1 ovpr-dark bg-fix online-cours" style="background-image:url(assets/images/background/bg1.jpg);">
+        <!-- <div class="section-area section-sp1 ovpr-dark bg-fix online-cours" style="background-image:url(assets/images/background/bg1.jpg);">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center text-white">
@@ -555,9 +555,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Form END -->
-        <div class="section-area section-sp2">
+        <!-- <div class="section-area section-sp2">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center heading-bx">
@@ -642,10 +642,10 @@
                     <a href="#" class="btn">View All Event</a>
                 </div>
             </div>
-        </div>
+        </div> -->
         
         <!-- Testimonials -->
-        <div class="section-area section-sp2 bg-fix ovbl-dark" style="background-image:url(assets/images/background/bg1.jpg);">
+        <!-- <div class="section-area section-sp2 bg-fix ovbl-dark" style="background-image:url(assets/images/background/bg1.jpg);">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-white heading-bx left">
@@ -684,11 +684,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Testimonials END -->
         
         <!-- Recent News -->
-        <div class="section-area section-sp2">
+        <!-- <div class="section-area section-sp2">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 heading-bx left">
@@ -756,7 +756,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Recent News End -->
         
     </div>
