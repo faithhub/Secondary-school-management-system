@@ -28,7 +28,7 @@
       <div class="container clearfix">
         <!-- Header Logo ==== -->
         <div class="menu-logo">
-          <a href="index.html">
+          <a href="{{ url('index') }}">
             <img class="ttr-logo-desktop" alt="" src="{{ asset('dashboard/assets/images/logo-white.png') }}" width="160" height="27">
           </a>
         </div>

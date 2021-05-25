@@ -28,7 +28,7 @@
                                         <li>
 											@if ($student->avatar != null)
                                             <span class="new-users-pic">
-                                                <img src="{{ asset('uploads/teacher_avatar/'.$student->avatar) }}" alt=""/>
+                                                <img src="{{ asset('uploads/student_avatar/'.$student->avatar) }}" alt=""/>
                                             </span>												
 											@else
                                             <span class="new-users-pic">

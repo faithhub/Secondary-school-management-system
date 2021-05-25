@@ -34,18 +34,18 @@ class SubjectController extends Controller
 
     public function download_pdf()
     {
-         $subjects = DB::table('users')
+        $subjects = DB::table('users')
             ->join('results', 'results.student_id', '=', 'users.email')
             ->join('subjects', 'subjects.id', '=', 'results.subject_id')
             ->where('users.email', Auth::user()->email)
             ->where('results.student_id', Auth::user()->email)
             ->select('results.*', 'users.*', 'subjects.*')
             ->get();
-            $sn = 1;
+        $sn = 1;
         $class = Classes::where('class_id', Auth::user()->class_id)->first();
         $pdf = App::make('dompdf.wrapper');
         $pdf->setOptions(['dpi' => 150, 'defaultFont' => 'sans-serif']);
         $pdf->loadView('result', compact(['subjects', 'sn', 'class']));
-        return $pdf->download(Auth::user()->surname.' '.Auth::user()->last_name.' '.$class->name.' result.pdf');
+        return $pdf->download(Auth::user()->surname . ' ' . Auth::user()->last_name . ' ' . $class->name . ' result.pdf');
     }
 }

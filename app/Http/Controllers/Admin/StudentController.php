@@ -103,7 +103,7 @@ class StudentController extends Controller
         }
     }
 
-    
+
     public function create_bulk(Request $request)
     {
         $rules = array(
@@ -192,26 +192,26 @@ class StudentController extends Controller
     }
 
     public function check_student()
-    {                    
+    {
         $check = User::where('role', 'Student')->get();
         foreach ($check as $students) {
             $chk = Result::where('student_id', $students->email)->get();
-            if($chk->count() < 1){
+            if ($chk->count() < 1) {
                 $class = Classes::where('class_id', $students->class_id)->get();
                 foreach ($class as $subject) {
                     $this->create_new_result->create($subject, $students->email);
                 }
-            }elseif($chk->count() > 0){
+            } elseif ($chk->count() > 0) {
                 $subjects = Classes::where('class_id', $students->class_id)->pluck('subject_id');
                 $chk_std = Result::where('student_id', $students->email)->pluck('subject_id');
                 $subject_id = json_decode($subjects);
                 $chk_std = json_decode($chk_std);
-                $different = array_diff($subject_id,$chk_std);
-                if ($different != null) { 
+                $different = array_diff($subject_id, $chk_std);
+                if ($different != null) {
                     foreach ($different as $diff) {
                         $subjects = Classes::where('subject_id', $diff)->get();
                         $this->create_new_result->update_now($subjects, $students->email);
-                    }               
+                    }
                 }
             }
         }
